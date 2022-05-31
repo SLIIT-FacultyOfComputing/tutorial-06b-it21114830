@@ -1,30 +1,38 @@
 #include <iostream>
-using namespace std;
-#include "Box.h"
+#include "Student.h"
 
-int main() {
+using namespace std;
+
+int main() 
+{
   
-   // 1. Create a Box type object called box1
+// == DO NOT CHANGE THE MAIN PROGRAM =================
+   Student mystd;
+   mystd.assignDetails(1212, "Amalinga");
+   mystd.display();
+//==========================
+   return 0;
+===========
+   int Height, Length, Width;
   
-  
-   // ======= DO NOT CHANGE THE INPUT ===========
-   int height, length, width;
    cout << "Enter the Height of the Box : ";
-   cin >> height;
+   cin >> Height;
    cout << "Enter the Length of the Box : ";
-   cin >> length;
-   cout << "Enter the width of the Box : ";
-   cin >> width;
+   cin >> Length;
+   cout << "Enter the width of the Box :  ";
+   cin >> Width;
    // ===========================================
   
    // 2. Use setters assign height, length, width throw
+  Box1.setHeight(Height);
+  Box1.setLength(Length);
+  Box1.setWidth(Width);
   
    // === DO NOT CHANGE THE OUTPUT =============
-   cout << "Box Height " << box1.getHeight() << endl;
-   cout << "Box Length " << box1.getLength() << endl;
-   cout << "Box Width " << box1.getWidth() << endl;
-   cout << "Volume of Box is " << box1.calcVolume() << endl;
+   cout << "Box Height " << Box1.getHeight() << endl;
+   cout << "Box Length " << Box1.getLength() << endl;
+   cout << "Box Width  " << Box1.getWidth() << endl;
+   cout << "Volume of Box is " << Box1.calcVolume() << endl;
    // ==========================================
       return 0;
 }
-
